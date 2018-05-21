@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Best Fit</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			//Скрыть PopUp при загрузке страницы    
+			HideHtsChor();
+		});
+			//Функция отображения PopUp
+		function ShowHstChor(){
+			$("#hstChor").show();
+		}
+			//Функция скрытия PopUp
+		function HideHtsChor(){
+			$("#hstChor").hide();
+		}
+	</script>
+	<script>
+		$(document).ready(function(){
+			//Скрыть PopUp при загрузке страницы    
+			HideHtsProc();
+		});
+			//Функция отображения PopUp
+		function ShowHstProc(){
+			$("#hstProc").show();
+		}
+			//Функция скрытия PopUp
+		function HideHtsProc(){
+			$("#hstProc").hide();
+		}
+	</script>
+	<script>
+		$(document).ready(function(){
+			//Скрыть PopUp при загрузке страницы    
+			HideHtsOper();
+		});
+			//Функция отображения PopUp
+		function ShowHtsOper(){
+			$("#hstOper").show();
+		}
+			//Функция скрытия PopUp
+		function HideHtsOper(){
+			$("#hstOper").hide();
+		}
+	</script>
+	
+</head>
+<body>
+<!-- top bar -->
+    <div class="top">
+        <a href="#" target="_blank">Klinika Chirurgii Plastychnej || Adminisatrator</a>
+        <span class="right">
+            <a href="Enter.html">
+                <strong>Wyloguj</strong>
+            </a>
+        </span>
+    <div class="clr"></div>
+    </div>
+<!--/ top bar -->
+<!--/ menu -->
+	<div class="menu">
+		<h3 class="menu-title">Historia</h3>
+		<ul class="menu-list">
+			<br><li><a href="indexAdmin.html">Strona Główna</a></li></br>
+			<br><li><a href="javascript:ShowHstProc()">Historia Procedur</a></li></br>	
+			<br><li><a href="javascript:ShowHtsOper()">Historia Operacji</a></li></br>			
+		</ul>
+	</div>
+<!--/ menu -->
+<!-- content -->
+	
+	<div class="b-popup" id="hstChor">
+		<div class="b-popup-content">
+			<form action="" method="POST">
+		
+	
+			<a href="javascript:HideHtsChor()" >Zamknąć</a>
+		</div>
+	</div>
+	
+	<div class="b-popup" id="hstProc">
+		<div class="b-popup-content">
+			<form action="" method="POST">
+		
+	<table>
+		<h3>Procedury</h3>
+	</table>
+		</form>
+			<a href="javascript:HideHtsProc()" >Zamknąć</a>
+		</div>
+	</div>
+	
+	<div class="b-popup" id="hstOper">
+		<div class="b-popup-content">
+			<form action="" method="POST">
+		
+	<table>
+		<h3>Operacji</h3>
+	</table>
+		</form>
+			<a href="javascript:HideHtsOper()" >Zamknąć</a>
+		</div>
+	</div>
+
+<!-- content -->
+
+
+  
+</body>
+</html>
